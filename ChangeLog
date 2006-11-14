@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: claval  Tue Nov 14 14:48:29 PST 2006
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+declare m_useMcDir in GcrReconTool
+: ----------------------------------------------------------------------
+
+    *
+------------------------------------------------------------
 User: claval  Mon Nov 13 01:59:40 PST 2006
 GCRCalib
 
