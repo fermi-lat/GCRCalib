@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Nov 16 11:49:42 PST 2006
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Modifications in order to build on windows
+    *
+------------------------------------------------------------
 User: claval  Tue Nov 14 14:48:29 PST 2006
 GCRCalib/src/GCRRecon
 
