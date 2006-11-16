@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Thu Nov 16 11:49:42 PST 2006
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+Modifications in order to build on windows
+    *
+------------------------------------------------------------
+User: usher  Thu Nov 16 11:49:42 PST 2006
 GCRCalib/src/GCRRecon
 
 Modified Files:
