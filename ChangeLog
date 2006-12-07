@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: claval  Thu Dec  7 07:48:35 PST 2006
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove test package requirement
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p2, operation: add
 Package: GCRCalib
