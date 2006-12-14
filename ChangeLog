@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: claval  Thu Dec 14 02:02:55 PST 2006
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+Inter-towers filtering criteria included
+
+    *
+------------------------------------------------------------
+User: claval  Thu Dec 14 02:02:55 PST 2006
 GCRCalib/cmt
 
 Modified Files:
