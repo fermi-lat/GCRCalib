@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: claval  Thu Jan 18 07:10:45 PST 2007
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+MCDir vs TKRTrack bug fixed
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p4, operation: add
 Package: GCRCalib
