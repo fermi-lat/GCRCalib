@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: claval  Fri Apr 20 02:41:38 PDT 2007
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Introduction of OnboardFilter_HFC / TriggerEngine4(CNO) filters
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p5, operation: add
 Package: GCRCalib
