@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jul 10 10:21:41 PDT 2007
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update for ObfFilterStatus changes from CNO to HFC
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r2, operation: add
 Package: GCRCalib
