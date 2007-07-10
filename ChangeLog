@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jul 10 10:21:42 PDT 2007
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+update for ObfFilterStatus changes from CNO to HFC
+    *
+------------------------------------------------------------
 User: heather  Tue Jul 10 10:21:41 PDT 2007
 GCRCalib/doc
 
