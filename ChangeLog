@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Jul 12 21:42:36 PDT 2007
+GCRCalib/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+this should allow JO to set OutputLevel of Tools
+    *
+------------------------------------------------------------
+User: heather  Thu Jul 12 21:42:36 PDT 2007
 GCRCalib/cmt
 
 Modified Files:
