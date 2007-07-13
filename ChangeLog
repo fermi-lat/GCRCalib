@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Jul 12 21:42:36 PDT 2007
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+this should allow JO to set OutputLevel of Tools
+    *
+------------------------------------------------------------
+User: heather  Thu Jul 12 21:42:36 PDT 2007
 GCRCalib/src/GCRRecon
 
 Modified Files:
