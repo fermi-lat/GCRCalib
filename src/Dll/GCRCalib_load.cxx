@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/CalXtalResponse/src/Dll/CalXtalResponse_load.cxx,v 1.8 2006/04/26 20:23:55 fewtrell Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/src/Dll/GCRCalib_load.cxx,v 1.1.1.1 2006/11/13 09:59:38 claval Exp $
 /** 
  * @file
  * @author Zach Fewtrell
@@ -8,11 +8,11 @@
  */
 
 #include "GaudiKernel/DeclareFactoryEntries.h"
-#include "GaudiKernel/IToolFactory.h"
+//#include "GaudiKernel/IToolFactory.h"
 
-#define DLL_DECL_TOOL(x)       extern const IToolFactory& x##Factory; x##Factory.addRef();
+//#define DLL_DECL_TOOL(x)       extern const IToolFactory& x##Factory; x##Factory.addRef();
 
-#define DLL_DECL_TOOL(x)       extern const IToolFactory& x##Factory; x##Factory.addRef();
+//#define DLL_DECL_TOOL(x)       extern const IToolFactory& x##Factory; x##Factory.addRef();
 
 DECLARE_FACTORY_ENTRIES(GCRCalib) {
   
