@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jul 12 21:42:36 PDT 2007
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+this should allow JO to set OutputLevel of Tools
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r2p2, operation: add
 Package: GCRCalib
