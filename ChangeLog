@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: claval  Tue Aug  7 03:03:40 PDT 2007
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Requirements file modification due to VC8debug compilation errors
+
+    *
+------------------------------------------------------------
 User: kuss  Fri Jul 13 09:23:11 PDT 2007
 GCRCalib/src/GCRRecon
 
