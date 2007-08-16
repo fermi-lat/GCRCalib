@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Aug 16 09:57:01 PDT 2007
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+retag v1r1p6 as v1r2p4
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p6, operation: add
 Package: GCRCalib
