@@ -1,4 +1,103 @@
 ------------------------------------------------------------
+User: cohen  Wed Jan 23 20:17:03 PST 2008
+GCRCalib/doc/doxy-html
+
+Removed Files:
+	_clusters_vec_8cpp-source.html _clusters_vec_8cpp.html 
+	_clusters_vec_8cxx-source.html _clusters_vec_8cxx.html 
+	_clusters_vec_8cxx__incl.dot _clusters_vec_8cxx__incl.md5 
+	_clusters_vec_8h-source.html _clusters_vec_8h.html 
+	_clusters_vec_8h__dep__incl.dot 
+	_clusters_vec_8h__dep__incl.md5 _clusters_vec_8h__incl.dot 
+	_clusters_vec_8h__incl.md5 _g_c_r_calib__dll_8cxx-source.html 
+	_g_c_r_calib__dll_8cxx.html _g_c_r_calib__dll_8cxx__incl.dot 
+	_g_c_r_calib__dll_8cxx__incl.md5 
+	_g_c_r_calib__load_8cxx-source.html 
+	_g_c_r_calib__load_8cxx.html _g_c_r_calib__load_8cxx__incl.dot 
+	_g_c_r_calib__load_8cxx__incl.md5 
+	_g_c_r_recon_alg_8cpp-source.html _g_c_r_recon_alg_8cpp.html 
+	_g_c_r_recon_alg_8cxx-source.html _g_c_r_recon_alg_8cxx.html 
+	_g_c_r_recon_alg_8h-source.html _g_c_r_recon_alg_8h.html 
+	_g_c_r_select_alg_8cpp-source.html _g_c_r_select_alg_8cpp.html 
+	_g_c_r_select_alg_8cxx-source.html _g_c_r_select_alg_8cxx.html 
+	_g_c_r_select_alg_8h-source.html _g_c_r_select_alg_8h.html 
+	_g_c_r_xtal_8cpp-source.html _g_c_r_xtal_8cpp.html 
+	_g_c_r_xtal_8cxx-source.html _g_c_r_xtal_8cxx.html 
+	_g_c_r_xtal_8h-source.html _g_c_r_xtal_8h.html 
+	_g_c_r_xtal_col_8cpp-source.html _g_c_r_xtal_col_8cpp.html 
+	_g_c_r_xtal_col_8cxx-source.html _g_c_r_xtal_col_8cxx.html 
+	_g_c_r_xtal_col_8h-source.html _g_c_r_xtal_col_8h.html 
+	_gcr_recon_alg_8cxx-source.html _gcr_recon_alg_8cxx.html 
+	_gcr_recon_alg_8cxx__incl.dot _gcr_recon_alg_8cxx__incl.md5 
+	_gcr_recon_alg_8h-source.html _gcr_recon_alg_8h.html 
+	_gcr_recon_alg_8h__dep__incl.dot 
+	_gcr_recon_alg_8h__dep__incl.md5 _gcr_recon_alg_8h__incl.dot 
+	_gcr_recon_alg_8h__incl.md5 _gcr_select_alg_8cxx-source.html 
+	_gcr_select_alg_8cxx.html _gcr_select_alg_8cxx__incl.dot 
+	_gcr_select_alg_8cxx__incl.md5 _gcr_select_alg_8h-source.html 
+	_gcr_select_alg_8h.html _gcr_select_alg_8h__dep__incl.dot 
+	_gcr_select_alg_8h__dep__incl.md5 _gcr_select_alg_8h__incl.dot 
+	_gcr_select_alg_8h__incl.md5 _gcr_xtal_8cxx-source.html 
+	_gcr_xtal_8cxx.html _gcr_xtal_8cxx__incl.dot 
+	_gcr_xtal_8cxx__incl.md5 _gcr_xtal_8h-source.html 
+	_gcr_xtal_8h.html _gcr_xtal_8h__dep__incl.dot 
+	_gcr_xtal_8h__dep__incl.md5 _gcr_xtal_8h__incl.dot 
+	_gcr_xtal_8h__incl.md5 _gcr_xtal_col_8cxx-source.html 
+	_gcr_xtal_col_8cxx.html _gcr_xtal_col_8cxx__incl.dot 
+	_gcr_xtal_col_8cxx__incl.md5 _gcr_xtal_col_8h-source.html 
+	_gcr_xtal_col_8h.html _gcr_xtal_col_8h__dep__incl.dot 
+	_gcr_xtal_col_8h__dep__incl.md5 _gcr_xtal_col_8h__incl.dot 
+	_gcr_xtal_col_8h__incl.md5 _hits_vec_8cpp-source.html 
+	_hits_vec_8cpp.html _hits_vec_8cxx-source.html 
+	_hits_vec_8cxx.html _hits_vec_8cxx__incl.dot 
+	_hits_vec_8cxx__incl.md5 _hits_vec_8h-source.html 
+	_hits_vec_8h.html _hits_vec_8h__dep__incl.dot 
+	_hits_vec_8h__dep__incl.md5 _hits_vec_8h__incl.dot 
+	_hits_vec_8h__incl.md5 _layers_vec_8cpp-source.html 
+	_layers_vec_8cpp.html _layers_vec_8cxx-source.html 
+	_layers_vec_8cxx.html _layers_vec_8cxx__incl.dot 
+	_layers_vec_8cxx__incl.md5 _layers_vec_8h-source.html 
+	_layers_vec_8h.html _layers_vec_8h__dep__incl.dot 
+	_layers_vec_8h__dep__incl.md5 _layers_vec_8h__incl.dot 
+	_layers_vec_8h__incl.md5 algorithm_8cpp-source.html 
+	algorithm_8cpp.html algorithm_8h-source.html algorithm_8h.html 
+	annotated.html class_algorithm.html class_algorithm.png 
+	class_clusters_vec-members.html class_clusters_vec.html 
+	class_clusters_vec.png class_clusters_vec__coll__graph.dot 
+	class_clusters_vec__coll__graph.md5 
+	class_clusters_vec__inherit__graph.dot 
+	class_clusters_vec__inherit__graph.md5 
+	class_g_c_r_recon_alg-members.html class_g_c_r_recon_alg.html 
+	class_g_c_r_recon_alg.png class_g_c_r_select_alg-members.html 
+	class_g_c_r_select_alg.html class_g_c_r_select_alg.png 
+	class_g_c_r_xtal-members.html class_g_c_r_xtal.html 
+	class_g_c_r_xtal_col.html class_gcr_recon_alg-members.html 
+	class_gcr_recon_alg.html class_gcr_select_alg-members.html 
+	class_gcr_select_alg.html class_gcr_xtal-members.html 
+	class_gcr_xtal.html class_gcr_xtal_col.html 
+	class_hits_vec-members.html class_hits_vec.html 
+	class_layers_vec-members.html class_layers_vec.html 
+	class_layers_vec.png class_layers_vec__coll__graph.dot 
+	class_layers_vec__coll__graph.md5 
+	class_layers_vec__inherit__graph.dot 
+	class_layers_vec__inherit__graph.md5 dir_000000.html 
+	dir_000001.html dir_000002.html dirs.html doxygen.css 
+	doxygen.png files.html ftv2blank.png ftv2doc.png 
+	ftv2folderclosed.png ftv2folderopen.png ftv2lastnode.png 
+	ftv2link.png ftv2mlastnode.png ftv2mnode.png ftv2node.png 
+	ftv2plastnode.png ftv2pnode.png ftv2vertline.png 
+	functions.html functions_func.html functions_vars.html 
+	globals.html globals_defs.html globals_func.html 
+	globals_vars.html graph_legend.dot graph_legend.html 
+	hierarchy.html index.html inherit__graph__0.dot 
+	inherit__graph__0.md5 inherits.html main.html 
+	mainpage_8h-source.html mainpage_8h.html 
+	release_8notes-source.html release_8notes.html tree.html 
+Log Message:
+some cleanup of doc dir and MSG::INFO undue verbosity
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p3, operation: add
 Package: GCRCalib
