@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Tue Feb  5 16:59:13 PST 2008
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add the moment analysis as a possible filter
+
+    *
+------------------------------------------------------------
 User: cohen  Wed Jan 23 20:17:03 PST 2008
 GCRCalib/src/GCRSelect
 
