@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: cohen  Tue Feb  5 16:59:13 PST 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx GcrReconTool.cxx IGcrReconTool.h 
+Log Message:
+add the moment analysis as a possible filter
+
+    *
+------------------------------------------------------------
+User: cohen  Tue Feb  5 16:59:13 PST 2008
 GCRCalib/cmt
 
 Modified Files:
