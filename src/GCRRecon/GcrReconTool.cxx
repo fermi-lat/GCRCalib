@@ -613,149 +613,179 @@ void GcrReconTool::buildGcrXtalsVec(){
       return;
   }
   
-  m_G4PropTool->setStepStart(m_calEntryPoint,m_initDir);
+  try {
+    m_G4PropTool->setStepStart(m_calEntryPoint,m_initDir);
     
-  //m_log << MSG::INFO << "\n totalTrack=" <<endreq;
-  //totalTrack.printOn(std::cout);
+    //m_log << MSG::INFO << "\n totalTrack=" <<endreq;
+    //totalTrack.printOn(std::cout);
     
-  m_G4PropTool->step(totalLength);     
+    m_G4PropTool->step(totalLength);     
     
-  int numSteps = m_G4PropTool->getNumberSteps();
+    int numSteps = m_G4PropTool->getNumberSteps();
     
-  //m_log << MSG::INFO << "number of Propagation Steps= " << numSteps <<endreq;
+    //m_log << MSG::INFO << "number of Propagation Steps= " << numSteps <<endreq;
     
-  idents::VolumeIdentifier volId;
-  idents::VolumeIdentifier prefix=m_detSvc->getIDPrefix();
-  int itow=-1;
-  int ilay=-1;
-  int icol=-1;
-  double arcLen_step=0.;
-  Point stepPos,entryPoint,exitPoint;
+    idents::VolumeIdentifier volId;
+    idents::VolumeIdentifier prefix=m_detSvc->getIDPrefix();
+    int itow=-1;
+    int ilay=-1;
+    int icol=-1;
+    double arcLen_step=0.;
+    Point stepPos,entryPoint,exitPoint;
     
  
-  for(int istep=0; istep<numSteps; ++istep)
-    {
-      //m_log << MSG::INFO << "G4 propagation step number= " << istep <<endreq;
-      volId=m_G4PropTool->getStepVolumeId(istep);
-      //m_log << MSG::INFO << "volId= " << volId.name() <<endreq;
+    for(int istep=0; istep<numSteps; ++istep)
+      {
+	//m_log << MSG::INFO << "G4 propagation step number= " << istep <<endreq;
+	volId=m_G4PropTool->getStepVolumeId(istep);
+	//m_log << MSG::INFO << "volId= " << volId.name() <<endreq;
       
-      volId.prepend(prefix);
+	volId.prepend(prefix);
 	
-      arcLen_step = m_G4PropTool->getStepArcLen(istep);
+	arcLen_step = m_G4PropTool->getStepArcLen(istep);
       
-      //Comment from Tracy Usher: 
-      //getStepPosition(*int* stepIdx = -1) *const* = 0 actually returns the position at the end of a given step.
-      entryPoint = m_G4PropTool->getStepPosition(istep-1);  
-      exitPoint = m_G4PropTool->getStepPosition(istep);
+	//Comment from Tracy Usher: 
+	//getStepPosition(*int* stepIdx = -1) *const* = 0 actually returns the position at the end of a given step.
+	entryPoint = m_G4PropTool->getStepPosition(istep-1);  
+	exitPoint = m_G4PropTool->getStepPosition(istep);
       
       
-      int crossedFaces;
-      double minDist;
+	int crossedFaces;
+	double minDist;
 
  
 	
-      //********* build GcrXtalsMap and gcrXtalVec
-      if(volId.size()>7 && volId[0]==0 && volId[3]==0 && volId[7]==0)// in Xtal ? 
-        {
-	  itow=4*volId[1]+volId[2];
-	  ilay=volId[4];
-	  icol=volId[6];
+	//********* build GcrXtalsMap and gcrXtalVec
+	if(volId.size()>7 && volId[0]==0 && volId[3]==0 && volId[7]==0)// in Xtal ? 
+	  {
+	    itow=4*volId[1]+volId[2];
+	    ilay=volId[4];
+	    icol=volId[6];
 	  
-	  Point xtalCentralPoint = m_xtalCentersTab[itow][ilay][icol];
+	    Point xtalCentralPoint = m_xtalCentersTab[itow][ilay][icol];
 	 
-	//m_log << MSG::INFO << "(itow,ilay,icol)=(" << itow << "," << ilay << "," << icol << ")" << endreq; 
-	if(debugging){    
-        m_log << MSG::INFO << "(itow,ilay,icol)=(" << itow << "," << ilay << "," << icol << ")" << endreq;
-        m_log << MSG::INFO << "istep " << istep <<  ": entryPoint=" << entryPoint <<endreq;
+	    //m_log << MSG::INFO << "(itow,ilay,icol)=(" << itow << "," << ilay << "," << icol << ")" << endreq; 
+	    if(debugging){    
+	      m_log << MSG::INFO << "(itow,ilay,icol)=(" << itow << "," << ilay << "," << icol << ")" << endreq;
+	      m_log << MSG::INFO << "istep " << istep <<  ": entryPoint=" << entryPoint <<endreq;
         
-        m_log << MSG::INFO << "istep " << istep <<  ": exitPoint= " << exitPoint << endreq;
+	      m_log << MSG::INFO << "istep " << istep <<  ": exitPoint= " << exitPoint << endreq;
 	
-        m_log << MSG::INFO << "arcLen_step, exitPoint - entryPoint " << arcLen_step << ","<<  sqrt((exitPoint - entryPoint) * (exitPoint - entryPoint)) << endreq;
-    }
+	      m_log << MSG::INFO << "arcLen_step, exitPoint - entryPoint " << arcLen_step << ","<<  sqrt((exitPoint - entryPoint) * (exitPoint - entryPoint)) << endreq;
+	    }
 
-	  if(m_gcrXtalsMap[itow][ilay][icol]<0){ //if Xtal has not already been identified as part of the theoretical track
-	    //m_log << MSG::INFO << "new touched Xtal"<< endreq;
+	    if(m_gcrXtalsMap[itow][ilay][icol]<0){ //if Xtal has not already been identified as part of the theoretical track
+	      //m_log << MSG::INFO << "new touched Xtal"<< endreq;
 
-	    Event::CalXtalRecData* xTalData = m_hitsMap[itow][ilay][icol];   // search for corresponding hits entry, if any
+	      Event::CalXtalRecData* xTalData = m_hitsMap[itow][ilay][icol];   // search for corresponding hits entry, if any
 	    
-	    if(xTalData){//add and update entry on grcXtalVec, only if a corresponding CalXtalRecData is found
+	      if(xTalData){//add and update entry on grcXtalVec, only if a corresponding CalXtalRecData is found
 	    
-	            idents::CalXtalId xtalId = xTalData->getPackedId();
+		idents::CalXtalId xtalId = xTalData->getPackedId();
 
-	            m_gcrXtalsMap[itow][ilay][icol] = m_numGcrXtals++; // the entry of m_gcrXtalsMap corresponds to m_gcrXtalVec index
-		    m_gcrXtalVec.push_back(Event::GcrXtal());
-		    Event::GcrXtal& gcrXtal = m_gcrXtalVec.back();
-		    gcrXtal.setXtalId(xtalId);  
-		    gcrXtal.setPathLength(arcLen_step);	
+		m_gcrXtalsMap[itow][ilay][icol] = m_numGcrXtals++; // the entry of m_gcrXtalsMap corresponds to m_gcrXtalVec index
+		m_gcrXtalVec.push_back(Event::GcrXtal());
+		Event::GcrXtal& gcrXtal = m_gcrXtalVec.back();
+		gcrXtal.setXtalId(xtalId);  
+		gcrXtal.setPathLength(arcLen_step);	
 		    
 		    
-		    gcrXtal.setEntryPoint(entryPoint);
-		    gcrXtal.setExitPoint(exitPoint);
-		    getCrossedFaces(ilay,xtalCentralPoint,entryPoint,exitPoint,crossedFaces,minDist);
-		    gcrXtal.setCrossedFaces(crossedFaces);
-		    gcrXtal.setClosestFaceDist(minDist);
+		gcrXtal.setEntryPoint(entryPoint);
+		gcrXtal.setExitPoint(exitPoint);
+		getCrossedFaces(ilay,xtalCentralPoint,entryPoint,exitPoint,crossedFaces,minDist);
+		gcrXtal.setCrossedFaces(crossedFaces);
+		gcrXtal.setClosestFaceDist(minDist);
 		    
-		    //TEST:
-		    int n,m;
-		    gcrXtal.getReadableXedFaces(crossedFaces,n,m);
+		//TEST:
+		int n,m;
+		gcrXtal.getReadableXedFaces(crossedFaces,n,m);
 		    
-		    if(debugging){
-		        m_log <<"crossedFaces,n,m="<< crossedFaces << "," << n << "," << m << endreq;
-			m_log <<"gcrXtalId,pathLength"<< gcrXtal.getXtalId() << "," << gcrXtal.getPathLength() << endreq;
-	             }
+		if(debugging){
+		  m_log <<"crossedFaces,n,m="<< crossedFaces << "," << n << "," << m << endreq;
+		  m_log <<"gcrXtalId,pathLength"<< gcrXtal.getXtalId() << "," << gcrXtal.getPathLength() << endreq;
+		}
 
 		
-	    } 
-	    else  // track crosses crystal, but no corresponding CalXtal found
-	      m_gcrXtalsMap[itow][ilay][icol]=-2;  
+	      } 
+	      else  // track crosses crystal, but no corresponding CalXtal found
+		m_gcrXtalsMap[itow][ilay][icol]=-2;  
 
 	   
-	   // else
-	    //     m_log << MSG::INFO << "new touched Xtal: no corresponding CalXtalRecData was found"<< endreq;
+	      // else
+	      //     m_log << MSG::INFO << "new touched Xtal: no corresponding CalXtalRecData was found"<< endreq;
 		 
-            //m_log << MSG::INFO << "m_gcrXtalVec.size()= "<< m_gcrXtalVec.size() << endreq; 
+	      //m_log << MSG::INFO << "m_gcrXtalVec.size()= "<< m_gcrXtalVec.size() << endreq; 
 	    
-	  }
-	  else{// if Xtal has already been identified as part of the theoretical track
-	    //m_log << MSG::INFO << "Xtal already touched"<< endreq;
-	    
-	    int gcrXtalVecIndex = m_gcrXtalsMap[itow][ilay][icol];  // we get the index of gcrXtalVec entry
-	    //m_log << MSG::INFO << "gcrXtalVecIndex =" << gcrXtalVecIndex << endreq;
-	    // m_log << MSG::INFO << "m_gcrXtalVec.size()= "<< m_gcrXtalVec.size() << endreq; 
-	    
-	    if(m_hitsMap[itow][ilay][icol]){  // if a corresponding CalXtalRecData is found
-		    
-		    Event::GcrXtal currentGcrXtal = m_gcrXtalVec.at(gcrXtalVecIndex); // find corresponding entry of gcrXtalVec
-
-		    currentGcrXtal.setPathLength(currentGcrXtal.getPathLength() + arcLen_step); // pathLength update
-		    currentGcrXtal.setExitPoint(exitPoint);// exitPoint update
-		    getCrossedFaces(ilay,xtalCentralPoint,entryPoint,exitPoint,crossedFaces,minDist);
-                    currentGcrXtal.setCrossedFaces(crossedFaces);
-		    currentGcrXtal.setClosestFaceDist(minDist);
-		    
-		    m_gcrXtalVec.at(gcrXtalVecIndex) = currentGcrXtal;
-		    
-		    
-		    //TEST:
-		    if(debugging){
-			m_log << MSG::INFO << " Xtal has already been identified as part of the theoretical track"<< endreq; 
-			//int n,m;
-			//currentGcrXtal.getReadableXedFaces(crossedFaces,n,m);
-                	m_log <<"gcrXtalId,pathLength= "<< currentGcrXtal.getXtalId() << "," << currentGcrXtal.getPathLength() << endreq;
-                        m_log <<"m_gcrXtalVec.at(gcrXtalVecIndex), gcrXtalId,pathLength= "<< m_gcrXtalVec.at(gcrXtalVecIndex).getXtalId() << "," << m_gcrXtalVec.at(gcrXtalVecIndex).getPathLength() << endreq;
-		   }
-
 	    }
-	    //else     
-		    //m_log << MSG::INFO << "Xtal already touched: no corresponding CalXtalRecData was found"<< endreq; 
+	    else{// if Xtal has already been identified as part of the theoretical track
+	      //m_log << MSG::INFO << "Xtal already touched"<< endreq;
 	    
-	  }
+	      int gcrXtalVecIndex = m_gcrXtalsMap[itow][ilay][icol];  // we get the index of gcrXtalVec entry
+	      //m_log << MSG::INFO << "gcrXtalVecIndex =" << gcrXtalVecIndex << endreq;
+	      // m_log << MSG::INFO << "m_gcrXtalVec.size()= "<< m_gcrXtalVec.size() << endreq; 
+	    
+	      if(m_hitsMap[itow][ilay][icol]){  // if a corresponding CalXtalRecData is found
+		    
+		Event::GcrXtal currentGcrXtal = m_gcrXtalVec.at(gcrXtalVecIndex); // find corresponding entry of gcrXtalVec
+
+		currentGcrXtal.setPathLength(currentGcrXtal.getPathLength() + arcLen_step); // pathLength update
+		currentGcrXtal.setExitPoint(exitPoint);// exitPoint update
+		getCrossedFaces(ilay,xtalCentralPoint,entryPoint,exitPoint,crossedFaces,minDist);
+		currentGcrXtal.setCrossedFaces(crossedFaces);
+		currentGcrXtal.setClosestFaceDist(minDist);
+		    
+		m_gcrXtalVec.at(gcrXtalVecIndex) = currentGcrXtal;
+		    
+		    
+		//TEST:
+		if(debugging){
+		  m_log << MSG::INFO << " Xtal has already been identified as part of the theoretical track"<< endreq; 
+		  //int n,m;
+		  //currentGcrXtal.getReadableXedFaces(crossedFaces,n,m);
+		  m_log <<"gcrXtalId,pathLength= "<< currentGcrXtal.getXtalId() << "," << currentGcrXtal.getPathLength() << endreq;
+		  m_log <<"m_gcrXtalVec.at(gcrXtalVecIndex), gcrXtalId,pathLength= "<< m_gcrXtalVec.at(gcrXtalVecIndex).getXtalId() << "," << m_gcrXtalVec.at(gcrXtalVecIndex).getPathLength() << endreq;
+		}
+
+	      }
+	      //else     
+	      //m_log << MSG::INFO << "Xtal already touched: no corresponding CalXtalRecData was found"<< endreq; 
+	    
+	    }
 	   
 
-        }// end of: if in Xtal
+	  }// end of: if in Xtal
 
-    }// end of: for(int istep= ..)
-    
+      }// end of: for(int istep= ..)
+  } catch( std::exception& e ) {
+    MsgStream log(msgSvc(), name());
+    SmartDataPtr<Event::EventHeader> header(m_dataSvc, EventModel::EventHeader);
+    unsigned long evtId = (header) ? header->event() : 0;
+    long runId = (header) ? header->run() : -1;
+    log << MSG::WARNING << "Caught exception (run,event): ( " 
+	<< runId << ", " << evtId << " ) " << e.what() 
+	<< "  Skipping CAL crystal searches for this event." << endreq;
+    log << MSG::WARNING << "total length requested for the propagator :" 
+	<< totalLength << endreq;
+    log << MSG::WARNING << "CAL entry point :" 
+	<< m_calEntryPoint << endreq;
+    log << MSG::WARNING << "CAL exit point :" 
+	<< m_calExitPoint << endreq;
+  } catch(...) {
+    MsgStream log(msgSvc(), name());
+    SmartDataPtr<Event::EventHeader> header(m_dataSvc, EventModel::EventHeader);
+    unsigned long evtId = (header) ? header->event() : 0;
+    long runId = (header) ? header->run() : -1;
+    log << MSG::WARNING << "Caught unknown exception (run,event): ( " 
+	<< runId << ", " << evtId << " ) "
+	<< " Skipping CAL crystal searches for this event." << endreq;
+    log << MSG::WARNING << "total length requested for the propagator :" 
+	<< totalLength << endreq;
+    log << MSG::WARNING << "CAL entry point :" 
+	<< m_calEntryPoint << endreq;
+    log << MSG::WARNING << "CAL exit point :" 
+	<< m_calExitPoint << endreq;
+  }
+  
   // ========================================================================================
 
   if(debugging)
