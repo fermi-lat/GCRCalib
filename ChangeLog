@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: claval  Thu Mar 27 16:36:58 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx GcrReconTool.cxx 
+Log Message:
+redefinition of OBFcuts
+: ----------------------------------------------------------------------
+
+    *
+------------------------------------------------------------
 User: claval  Tue Mar 25 09:50:30 PDT 2008
 GCRCalib/src/GCRRecon
 
