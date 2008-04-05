@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: claval  Sat Apr  5 01:56:21 PDT 2008
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+Fix errors in transmition of parameters to G4Propagator
+
+
+    *
+------------------------------------------------------------
 User: claval  Sat Apr  5 01:56:20 PDT 2008
 GCRCalib/src/GCRRecon
 
