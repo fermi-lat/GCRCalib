@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: claval  Sat Apr  5 01:56:20 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx GcrReconTool.cxx IGcrReconTool.h 
+Log Message:
+Fix errors in transmition of parameters to G4Propagator
+
+
+    *
+------------------------------------------------------------
 User: claval  Fri Mar 28 16:05:50 PDT 2008
 GCRCalib/src/GCRRecon
 
