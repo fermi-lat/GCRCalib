@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: claval  Mon Apr  7 08:07:24 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx GcrReconTool.cxx 
+Log Message:
+include EnergyThreshold dependence for selecting hits in GcrSelectTool, as a funcion of which OBF filter (Gamma, HFC, Mip, DFC) has been passed 
+
+    *
+------------------------------------------------------------
+User: claval  Mon Apr  7 08:07:24 PDT 2008
 GCRCalib/doc
 
 Modified Files:
