@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Mon Apr 14 05:01:07 PDT 2008
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix an oops
+    *
+------------------------------------------------------------
 User: claval  Mon Apr  7 08:07:24 PDT 2008
 GCRCalib/src/GCRSelect
 
