@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Wed Apr 16 06:06:02 PDT 2008
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+finish implementation of priorities
+    *
+------------------------------------------------------------
+User: cohen  Wed Apr 16 06:06:02 PDT 2008
 GCRCalib/src/GCRRecon
 
 Modified Files:
