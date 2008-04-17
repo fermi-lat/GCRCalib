@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Apr 17 07:11:34 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx 
+Log Message:
+change default initAxis from MC to TKR to be valid by default for data as well
+    *
+------------------------------------------------------------
 User: cohen  Wed Apr 16 06:06:02 PDT 2008
 GCRCalib/src/GCRSelect
 
