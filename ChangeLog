@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Sun May 11 13:28:14 PDT 2008
+GCRCalib/cmt
+
+Modified Files:
+      Tag: v1r3p3-GRv13r11p1
+	requirements 
+Log Message:
+modifs to the propagator stepping after Tracy modifs to G4Propagator v2r3p2
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-04-02, operation: add
 Package: GCRCalib
