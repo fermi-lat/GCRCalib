@@ -1,3 +1,4 @@
+v1r3p3gr2 11/05/08 jct	   follow up on Tracy's G4Propagator v2r3p2 modifs.
 v1r3p3gr1 23/02/08 jct     patch to introduce try catch block for potential
                            G4Propagator exceptions
 v1r3p3  30/10/07 jct       use Gem instead of Glt, try to protect use of G4Propagator
