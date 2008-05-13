@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue May 13 11:23:27 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx GcrReconTool.cxx 
+Log Message:
+merge branch modifs from G4Propagator and compute status word in all case
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p3gr2, operation: add
 Package: GCRCalib
