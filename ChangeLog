@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed May 14 08:45:29 PDT 2008
+GCRCalib/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix a compilation issue, preparing to tag
+    *
+------------------------------------------------------------
 User: cohen  Wed May 14 08:45:28 PDT 2008
 GCRCalib/cmt
 
