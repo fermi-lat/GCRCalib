@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Wed May 14 08:45:29 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	IGcrReconTool.h 
+Log Message:
+fix a compilation issue, preparing to tag
+    *
+------------------------------------------------------------
+User: cohen  Wed May 14 08:45:29 PDT 2008
 GCRCalib/doc
 
 Modified Files:
