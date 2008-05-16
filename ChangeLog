@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri May 16 02:03:12 PDT 2008
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix windows compilation, cleanup some code, preparing for tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-04-04, operation: add
 Package: GCRCalib
