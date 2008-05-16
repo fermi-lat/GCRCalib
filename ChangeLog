@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Fri May 16 02:03:12 PDT 2008
+GCRCalib/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix windows compilation, cleanup some code, preparing for tag
+    *
+------------------------------------------------------------
+User: cohen  Fri May 16 02:03:12 PDT 2008
 GCRCalib/cmt
 
 Modified Files:
