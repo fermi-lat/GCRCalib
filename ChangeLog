@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Jun 25 16:39:53 PDT 2008
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+set status bits to 0 to avoid unphysical values
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-04-06, operation: add
 Package: GCRCalib
