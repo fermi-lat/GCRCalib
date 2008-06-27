@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri Jun 27 01:51:42 PDT 2008
+GCRCalib/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix an oops
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-05-00, operation: add
 Package: GCRCalib
