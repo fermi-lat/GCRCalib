@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Fri Jun 27 01:51:43 PDT 2008
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+fix an oops
+    *
+------------------------------------------------------------
+User: cohen  Fri Jun 27 01:51:43 PDT 2008
 GCRCalib/doc
 
 Modified Files:
