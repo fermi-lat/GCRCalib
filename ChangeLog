@@ -1,22 +1,4 @@
 ------------------------------------------------------------
-User: cohen  Thu Jun 26 20:08:55 PDT 2008
-GCRCalib/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-fix the status word following the API change of obf 1-0-8, and follow nomenclature
-    *
-------------------------------------------------------------
-User: cohen  Thu Jun 26 20:08:55 PDT 2008
-GCRCalib/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-fix the status word following the API change of obf 1-0-8, and follow nomenclature
-    *
-------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-04-07, operation: add
 Package: GCRCalib
