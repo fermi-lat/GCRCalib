@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Mon Jun 30 08:59:03 PDT 2008
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+final fix (hopefully) to the energy threshold code
+    *
+------------------------------------------------------------
+User: cohen  Mon Jun 30 08:59:03 PDT 2008
 GCRCalib/doc
 
 Modified Files:
