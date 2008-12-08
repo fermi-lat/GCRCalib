@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: GCRCalib-01-06-01, operation: add
+Package: GCRCalib
+User: ecephas  Mon Dec  8 13:39:59 2008
+Files:
+  GCRCalib/SConscript  1.2
+  GCRCalib/SConscript  1.2
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 13:39:53 PST 2008
 GlastRelease-scons/GCRCalib
 
