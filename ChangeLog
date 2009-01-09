@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-15-49-00, operation: add
+Package: GCRCalib
+User: glastrm  Fri Jan  9 13:21:20 2009
+Files:
+  GCRCalib/SConscript  1.2
+  GCRCalib/GCRCalibLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-15-50-10, operation: del
 Package: GCRCalib
 User: glastrm  Fri Jan  9 08:30:28 2009
