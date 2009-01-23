@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+TAG
+Tag name: GCRCalib-01-06-01, operation: mov
+Package: GCRCalib
+User: glastrm  Thu Jan 22 16:31:55 2009
+Files:
+  GCRCalib/SConscript  1.3
+  GCRCalib/SConscript  1.3
+  GCRCalib/SConscript  1.3
+  GCRCalib/GCRCalibLib.py  1.3
+  GCRCalib/GCRCalibLib.py  1.3
+  GCRCalib/GCRCalibLib.py  1.3
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:21:10 PST 2009
 GlastRelease-scons/GCRCalib
 
