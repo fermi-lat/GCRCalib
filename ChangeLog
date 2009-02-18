@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Wed Feb 18 10:38:28 PST 2009
+GCRCalib/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix two bugs in the way m_initDir is initialized, and the case of no track in TDS
+    *
+------------------------------------------------------------
+User: cohen  Wed Feb 18 10:38:28 PST 2009
 GCRCalib/cmt
 
 Modified Files:
