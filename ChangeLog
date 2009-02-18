@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r6p2, operation: mov
+Package: GCRCalib
+User: glastrm  Wed Feb 18 11:30:16 2009
+Files:
+  GCRCalib/SConscript  1.4
+
+    *
+------------------------------------------------------------
 User: glastrm  Wed Feb 18 11:30:10 PST 2009
 GCRCalib
 
