@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Mon Oct  5 06:01:03 PDT 2009
+GCRCalib/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix warnings for RHEL4 clean living
+    *
+------------------------------------------------------------
+User: cohen  Mon Oct  5 06:01:03 PDT 2009
 GCRCalib/cmt
 
 Modified Files:
