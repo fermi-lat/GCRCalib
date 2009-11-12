@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.4 2009/02/18 19:30:10 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/GCRCalib/SConscript,v 1.5 2009/10/05 13:01:39 cohen Exp $
 # Authors: Claudia.Lavalley@lpta.in2p3.fr
 # Version: GCRCalib-01-06-03
 Import('baseEnv')
@@ -16,9 +16,8 @@ if baseEnv['PLATFORM'] == 'win32':
 	progEnv.AppendUnique(CPPDEFINES = ['__i386'])
 
 progEnv.Tool('GCRCalibLib')
-test_GCRCalib = progEnv.GaudiProgram('test_GCRCalib', listFiles(['src/test/*.cxx']), test=1)
-progEnv.Tool('registerObjects', package = 'GCRCalib', libraries = [GCRCalib], testApps = [test_GCRCalib])
-
-
-
-
+test_GCRCalib = progEnv.GaudiProgram('test_GCRCalib',
+                                     listFiles(['src/test/*.cxx']), test=1)
+progEnv.Tool('registerTargets', package = 'GCRCalib',
+             libraryCxts = [[GCRCalib, libEnv]],
+             testAppCxts = [[test_GCRCalib, progEnv]])
