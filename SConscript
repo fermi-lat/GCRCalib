@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/GCRCalib/SConscript,v 1.6 2009/11/12 01:05:22 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/GCRCalib/SConscript,v 1.7 2009/11/12 01:10:07 jrb Exp $
 # Authors: Claudia.Lavalley@lpta.in2p3.fr
 # Version: GCRCalib-01-06-04
 Import('baseEnv')
@@ -8,16 +8,20 @@ Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('GCRCalibLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='GCRCalib', toBuild='component')
 libEnv.AppendUnique(CPPPATH = ['#TkrRecon/','#GCRCalib/'])
-GCRCalib = libEnv.SharedLibrary('GCRCalib', listFiles(['src/Dll/*.cxx']) + listFiles(['src/GCRRecon/*.cxx']) + listFiles(['src/GCRSelect/*.cxx']))
+GCRCalib = libEnv.SharedLibrary('GCRCalib',
+				listFiles(['src/Dll/*.cxx',
+					   'src/GCRRecon/*.cxx',
+					   'src/GCRSelect/*.cxx']))
 
 if baseEnv['PLATFORM'] == 'win32':
 	progEnv.AppendUnique(CPPDEFINES = ['__i386'])
 
 progEnv.Tool('GCRCalibLib')
-test_GCRCalib = progEnv.GaudiProgram('test_GCRCalib',
-                                     listFiles(['src/test/*.cxx']), test=1)
+##test_GCRCalib = progEnv.GaudiProgram('test_GCRCalib',
+##                                     listFiles(['src/test/*.cxx']), test=1,
+##				     package='GCRCalib')
 progEnv.Tool('registerTargets', package = 'GCRCalib',
-             libraryCxts = [[GCRCalib, libEnv]],
-             testAppCxts = [[test_GCRCalib, progEnv]])
+             libraryCxts = [[GCRCalib, libEnv]])
+             ##testAppCxts = [[test_GCRCalib, progEnv]])
