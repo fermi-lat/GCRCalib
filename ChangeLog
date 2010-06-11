@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:36:16 PDT 2010
+GlastRelease-scons/GCRCalib
+
+Modified Files:
+	SConscript 
+Log Message:
+updates for SCons build
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-06-04, operation: add
 Package: GCRCalib
