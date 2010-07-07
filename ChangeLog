@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Jul  7 15:24:28 PDT 2010
+GCRCalib
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-07-00, operation: add
 Package: GCRCalib
