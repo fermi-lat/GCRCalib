@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Jul  7 12:47:52 PDT 2010
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+fix the OBF FSW issue, prepare to tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-06-05, operation: add
 Package: GCRCalib
