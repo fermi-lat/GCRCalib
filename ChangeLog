@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Sep 17 20:37:42 PDT 2010
+GCRCalib/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+Gaudi v21r7 updates
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-07-02, operation: add
 Package: GCRCalib
