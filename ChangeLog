@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Sep 17 20:37:43 PDT 2010
+GCRCalib/src/GCRRecon
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	GcrReconTool.cxx 
+Log Message:
+Gaudi v21r7 updates
+    *
+------------------------------------------------------------
 User: heather  Fri Sep 17 20:37:42 PDT 2010
 GCRCalib/cmt
 
