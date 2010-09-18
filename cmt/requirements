@@ -24,14 +24,16 @@ use OnboardFilterTds v*
 
 use ROOT v* IExternal
 
+use RootmapPolicy * GlastPolicy
 use gr_app v*
 
 apply_pattern package_include
 apply_pattern package_headers
 
-library GCRCalib  -s=Dll               ${source} \
-                  -s=GCRRecon          ${source} \
+library GCRCalib  -s=GCRRecon          ${source} \
                   -s=GCRSelect         ${source} 
+
+apply_pattern generate_rootmap library=GCRCalib
 
 macro GCRCalib_stamps     
 
