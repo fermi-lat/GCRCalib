@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 20 11:31:58 PDT 2010
+GlastRelease-scons/GCRCalib
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	SConscript 
+Log Message:
+Get SCons to make rootmap
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-06-05-gr01, operation: add
 Package: GCRCalib
