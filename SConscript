@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.9 2010/06/12 17:26:36 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/GCRCalib/SConscript,v 1.9.2.1 2010/10/08 16:30:49 heather Exp $
 # Authors: Claudia.Lavalley@lpta.in2p3.fr
 # Version: GCRCalib-01-06-05-gr01
 
@@ -11,10 +11,9 @@ libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='GCRCalib', toBuild='component')
 libEnv.AppendUnique(CPPPATH = ['#TkrRecon/','#GCRCalib/'])
-GCRCalib = libEnv.SharedLibrary('GCRCalib',
-				listFiles(['src/Dll/*.cxx',
-					   'src/GCRRecon/*.cxx',
-					   'src/GCRSelect/*.cxx']))
+GCRCalib = libEnv.ComponentLibrary('GCRCalib',
+				   listFiles(['src/GCRRecon/*.cxx',
+					      'src/GCRSelect/*.cxx']))
 
 if baseEnv['PLATFORM'] == 'win32':
 	progEnv.AppendUnique(CPPDEFINES = ['__i386'])
