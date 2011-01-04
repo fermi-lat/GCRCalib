@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan  4 14:41:02 PST 2011
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconTool.cxx 
+Log Message:
+Fix for new Cal parameters retrieval scheme
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 20 11:31:58 PDT 2010
 GlastRelease-scons/GCRCalib
 
