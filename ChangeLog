@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: GCRCalib
+User: heather  Wed Sep  7 14:43:30 2011
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: GCRCalib
 User: heather  Wed Sep  7 14:43:11 2011
 Files:
   GCRCalib/.cvsignore  1.2
