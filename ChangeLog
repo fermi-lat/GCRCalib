@@ -2,6 +2,19 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: GCRCalib
+User: heather  Wed Sep  7 14:43:37 2011
+Files:
+  GCRCalib/src/Dll/GCRCalib_load.cxx  1.2
+  GCRCalib/src/Dll/GCRCalib_dll.cxx  1.1.1.1
+  GCRCalib/src/GCRRecon/IGcrReconTool.h  1.7
+  GCRCalib/src/GCRRecon/GcrReconAlg.cxx  1.16
+  GCRCalib/src/GCRRecon/GcrReconTool.cxx  1.30
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: GCRCalib
 User: heather  Wed Sep  7 14:43:30 2011
 Files:
 
