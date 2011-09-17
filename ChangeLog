@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat Sep 17 16:31:17 PDT 2011
+GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx 
+Log Message:
+Quiet it down a bit
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: GCRCalib
