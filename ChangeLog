@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:50:18 PST 2011
+GlastRelease-scons/GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:50:18 PST 2011
 GlastRelease-scons/GCRCalib/src/GCRRecon
 
 Modified Files:
