@@ -1,4 +1,56 @@
 ------------------------------------------------------------
+TAG
+Tag name: GCRCalib-01-09-00, operation: add
+Package: GCRCalib
+User: heather  Mon Dec 12 13:22:07 2011
+Files:
+  GCRCalib/.cvsignore  1.2
+  GCRCalib/ChangeLog  1.276
+  GCRCalib/SConscript  1.18
+  GCRCalib/GCRCalibLib.py  1.3
+  GCRCalib/cmt/.cvsignore  1.1.1.1
+  GCRCalib/cmt/requirements  1.43
+  GCRCalib/doc/release.notes  1.34
+  GCRCalib/doc/used_packages.html  1.2
+  GCRCalib/src/mainpage.h  1.1.1.1
+  GCRCalib/src/Dll/GCRCalib_load.cxx  1.2
+  GCRCalib/src/Dll/GCRCalib_dll.cxx  1.1.1.1
+  GCRCalib/src/GCRRecon/IGcrReconTool.h  1.7
+  GCRCalib/src/GCRRecon/GcrReconAlg.cxx  1.19
+  GCRCalib/src/GCRRecon/GcrReconTool.cxx  1.33
+  GCRCalib/src/GCRSelect/DataStructures.h  1.1.1.1
+  GCRCalib/src/GCRSelect/IGcrSelectTool.h  1.1.1.1
+  GCRCalib/src/GCRSelect/GcrSelectTool.cxx  1.18
+  GCRCalib/src/GCRSelect/GcrSelectAlg.cxx  1.2
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_20.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_22.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_21.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_25.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_19.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_27.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_24.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_6.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_26.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_17.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_11.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_7.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_8.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_14.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_9.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_23.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_12.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/1stLayer.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_28.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_15.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_10.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_18.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_16.dat  1.1.1.1
+  GCRCalib/src/GCRSelect/EnergyPeaksData/de_g4_13.dat  1.1.1.1
+  GCRCalib/src/Utilities/GcrReconException.h  1.1.1.1
+  GCRCalib/src/Utilities/GcrSelectException.h  1.1.1.1
+
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:50:18 PST 2011
 GlastRelease-scons/GCRCalib/src/GCRSelect
 
