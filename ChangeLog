@@ -1,5 +1,21 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-04-01, operation: add
+Package: GCRCalib
+User: heather  Tue Dec 13 18:34:46 2011
+Files:
+  GCRCalib/.cvsignore  1.2
+  GCRCalib/ChangeLog  1.263
+  GCRCalib/SConscript  1.17
+  GCRCalib/GCRCalibLib.py  1.3
+  GCRCalib/cmt/.cvsignore  1.1.1.1
+  GCRCalib/cmt/requirements  1.42
+  GCRCalib/doc/release.notes  1.33
+  GCRCalib/doc/used_packages.html  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GCRCalib-01-09-00, operation: add
 Package: GCRCalib
 User: heather  Mon Dec 12 13:22:07 2011
