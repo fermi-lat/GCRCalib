@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 12 12:22:44 PST 2012
+GCRCalib
+
+Modified Files:
+	SConscript 
+Log Message:
+windows patch
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr17, operation: add
 Package: GCRCalib
