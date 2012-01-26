@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 26 08:22:52 PST 2012
+GCRCalib
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-07-02-gr01, operation: add
 Package: GCRCalib
