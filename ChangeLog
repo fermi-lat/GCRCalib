@@ -1,5 +1,21 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: GCRCalib
+User: heather  Tue Apr 17 11:57:12 2012
+Files:
+  GCRCalib/.cvsignore  1.2
+  GCRCalib/ChangeLog  1.201
+  GCRCalib/SConscript  1.12
+  GCRCalib/GCRCalibLib.py  1.3
+  GCRCalib/cmt/.cvsignore  1.1.1.1
+  GCRCalib/cmt/requirements  1.37
+  GCRCalib/doc/release.notes  1.28
+  GCRCalib/doc/used_packages.html  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-gr25, operation: add
 Package: GCRCalib
 User: heather  Mon Apr 16 15:07:56 2012
