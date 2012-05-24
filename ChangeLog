@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu May 24 15:30:51 PDT 2012
+GlastRelease-scons/GCRCalib
+
+Modified Files:
+	SConscript 
+Log Message:
+no longer need TkrRecon in include path
+    *
+------------------------------------------------------------
 User: cohen  Thu May 24 13:27:50 PDT 2012
 GlastRelease-scons/GCRCalib/src/GCRRecon
 
