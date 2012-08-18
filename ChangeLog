@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 17 17:27:43 PDT 2012
+GlastRelease-scons/GCRCalib
+
+Modified Files:
+	GCRCalibLib.py 
+Log Message:
+support no-install headers on Windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-02, operation: add
 Package: GCRCalib
