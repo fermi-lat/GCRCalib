@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Jan 23 02:40:44 PST 2013
+GlastRelease-scons/GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx 
+Log Message:
+propagate to GCR the need to pick up the first track from the tree collection if it is there (P8 recon)
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-04, operation: add
 Package: GCRCalib
