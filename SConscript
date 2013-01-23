@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.21 2012/05/24 22:41:06 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.22 2012/08/20 19:01:25 jrb Exp $
 # Authors: Claudia.Lavalley@lpta.in2p3.fr
-# Version: GCRCalib-01-11-00
+# Version: GCRCalib-01-12-00
 
 Import('baseEnv')
 Import('listFiles')
