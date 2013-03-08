@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri Mar  8 12:53:47 PST 2013
+GlastRelease-scons/GCRCalib/src/GCRRecon
+
+Modified Files:
+	GcrReconAlg.cxx 
+Log Message:
+fix a boohoo
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-10, operation: add
 Package: GCRCalib
