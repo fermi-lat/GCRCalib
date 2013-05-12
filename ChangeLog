@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Sun May 12 08:58:43 PDT 2013
-GCRCalib/src/GCRSelect
-
-Modified Files:
-	GcrSelectTool.cxx 
-Log Message:
-Fixing memory leak
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp43, operation: add
 Package: GCRCalib
