@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed May 15 10:41:45 PDT 2013
+GCRCalib
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+put in P8 memory leak fix
+    *
+------------------------------------------------------------
 TAG
 Tag name: GCRCalib-01-12-03, operation: add
 Package: GCRCalib
