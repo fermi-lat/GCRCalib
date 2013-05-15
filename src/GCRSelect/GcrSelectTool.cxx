@@ -580,11 +580,6 @@ void GcrSelectTool::buildEnergyMap()
       ilay=xTalData->getPackedId().getLayer();
       icol=xTalData->getPackedId().getColumn();
 
-	
-	
-      Event::CalXtalRecData* newXtalData = new Event::CalXtalRecData();
-      newXtalData = xTalData;
-	
       /**Event::CalMipTrack& calMipTrack = *trackIter;
        // Need to create a new CalMipTrack which will be "owned" by the TDS
        Event::CalMipTrack* newMipTrack = new Event::CalMipTrack();
