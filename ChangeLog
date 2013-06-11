@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jun 11 10:02:14 PDT 2013
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	GcrSelectTool.cxx 
+Log Message:
+fix tabs because it is annoying
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-16, operation: add
 Package: GCRCalib
