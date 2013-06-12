@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 12 12:40:36 PDT 2013
+GCRCalib/src/GCRSelect
+
+Modified Files:
+	DataStructures.h GcrSelectTool.cxx 
+Log Message:
+try more leak fixes
+    *
+------------------------------------------------------------
 User: heather  Wed Jun 12 12:40:35 PDT 2013
 GCRCalib/doc
 
