@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 12 12:40:35 PDT 2013
+GCRCalib
+
+Modified Files:
+	SConscript 
+Log Message:
+try more leak fixes
+    *
+------------------------------------------------------------
 User: heather  Tue Jun 11 10:02:14 PDT 2013
 GCRCalib/src/GCRSelect
 
