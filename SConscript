@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.24 2013/02/21 19:23:13 usher Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GCRCalib/SConscript,v 1.29 2014/04/08 22:12:54 heather Exp $
 # Authors: Claudia.Lavalley@lpta.in2p3.fr
 # Version: GCRCalib-01-12-02
 
